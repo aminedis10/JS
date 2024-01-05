@@ -35,7 +35,7 @@
 // March, March or May, the season is Spring
 // June, July or August, the season is Summer
 
-let month = prompt("enter the month");
+// let month = prompt("enter the month");
 // switch (true) {
 //   case month == "January" || month == "February" || month == "December":
 //     alert("the season is winter");
@@ -54,28 +54,68 @@ let month = prompt("enter the month");
 //     alert("invalide month");
 // }
 
-switch (month) {
-  case "January":
-  case "February":
-  case "December":
-    alert("the season is winter");
-    break;
-  case "September":
-  case "October":
-  case "November":
-    alert("the season is autumn");
-    break;
-  case "March":
-  case "April":
-  case "May":
-    alert("the season is Spring ");
-    break;
-  case "June":
-  case "July":
-  case "August":
-    alert("the season is Summer");
-    break;
+// switch (month) {
+//   case "January":
+//   case "February":
+//   case "December":
+//     alert("the season is winter");
+//     break;
+//   case "September":
+//   case "October":
+//   case "November":
+//     alert("the season is autumn");
+//     break;
+//   case "March":
+//   case "April":
+//   case "May":
+//     alert("the season is Spring ");
+//     break;
+//   case "June":
+//   case "July":
+//   case "August":
+//     alert("the season is Summer");
+//     break;
 
-  default:
-    alert("invalide month");
+//   default:
+//     alert("invalide month");
+// }
+
+// exo 13
+// function calculate(weight, height) {
+//   const heightInMeters = height / 100;
+
+//   const bmi = weight / (heightInMeters * heightInMeters);
+
+//   if (bmi < 18.5) {
+//     return "Underweight";
+//   } else if (bmi >= 18.5 && bmi <= 24.9) {
+//     return "Normal weight";
+//   } else if (bmi >= 25 && bmi <= 29.9) {
+//     return "Overweight";
+//   } else {
+//     return "Obese";
+//   }
+// }
+
+// const weight = 70;
+// const height = 175;
+
+// const bmiResult = calculate(weight, height);
+// console.log(`BMI: ${bmiResult}`);
+
+function Quadratic(a, b, c) {
+  let delta = b * b - 4 * a * c;
+  console.log({ delta });
+  if (delta < 0) {
+    return "no solution";
+  } else if (delta == 0) {
+    return -b / (2 * a);
+  } else {
+    x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    return { x1, x2 };
+  }
 }
+
+console.log(Quadratic(1, -1, -2));
+con;
